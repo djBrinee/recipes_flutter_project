@@ -1,5 +1,3 @@
-import 'package:menu/components/CardComponent.dart';
-
 class Recipe {
   String label;
   String imageUrl;

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:menu/components/CardComponent.dart';
 import 'package:menu/models/recipe.dart';
 
 class RecipeDetail extends StatefulWidget {
@@ -51,8 +50,8 @@ class _RecipeDetailState extends State<RecipeDetail> {
                 style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 38),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(top: 18.0),
+            const Padding(
+              padding: EdgeInsets.only(top: 18.0),
               child: Text(
                 "Ingredients",
                 style: TextStyle(color: Colors.brown, fontSize: 25),
@@ -76,14 +75,14 @@ class _RecipeDetailState extends State<RecipeDetail> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Servings: ",
                   style:
                       TextStyle(color: Colors.blueGrey, fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "${servings}",
-                  style: TextStyle(color: Colors.blue, fontSize: 20),
+                  "$servings",
+                  style: const TextStyle(color: Colors.blue, fontSize: 20),
                 )
               ],
             ),
